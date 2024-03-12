@@ -18,7 +18,7 @@ const Navbar = () => {
           <a className="hover:text-sky-800">ABOUT</a>
         </Link>
         <Link to="/booking">
-          <a className="hover:text-sky-800">BOOKING</a>
+          <a className="hover:text-sky-800">ALL CAR</a>
         </Link>
         <Link to="/for-rent">
           <a className="hover:text-sky-800 mr-5">FOR RENT</a>
