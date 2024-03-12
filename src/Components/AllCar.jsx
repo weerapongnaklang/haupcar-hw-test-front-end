@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 
 const AllCar = () => {
+
+  // sweetalert
   const showDeleteSwal = () => {
     Swal.fire({
       text: "Do you want to delete?",
@@ -21,13 +23,13 @@ const AllCar = () => {
       <div className="bg-slate-50 h-screen pt-5">
         <div className="rounded-md  w-3/5 m-auto  bg-white">
           <div className="ml-5">
-            <h3>จุดรับรถ</h3>
+            <p className="pt-2 font-bold">จุดรับรถ</p>
           </div>
           <div className="flex">
             <div className="w-2/4 m-5 ">
               <img
                 src="public/EV Carsharing.webp"
-                alt=""
+                alt="Carsharing"
                 className="w-full rounded-xl"
               />
             </div>
