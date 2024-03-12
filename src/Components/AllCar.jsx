@@ -1,31 +1,56 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const AllCar = () => {
+  const showDeleteSwal = () => {
+    Swal.fire({
+      text: "Do you want to delete?",
+      customClass: {
+        icon: "no-border",
+      },
+      confirmButtonColor: "#e8201a",
+      confirmButtonText: "OK",
+    });
+  };
+
   return (
-    <div>
+    <div className="">
       <Navbar />
-      <div className="border-2 rounded-md m-5">
-        <div className="ml-5">
-          <h3>จุดรับรถ</h3>
-        </div>
-        <div className="flex">
-          <div className="w-2/4 m-5">
-            <img src="public/EV Carsharing.webp" alt="" className="w-full rounded-xl" />
+      <div className="bg-slate-50 h-screen pt-5">
+        <div className="rounded-md  w-3/5 m-auto  bg-white">
+          <div className="ml-5">
+            <h3>จุดรับรถ</h3>
           </div>
-          <div className="m-5">
-            <h4>ชื่อ</h4>
-            <p>นั่งได้</p>
-            <p>ระบบ</p>
-            <p>หมายเหตุ</p>
-            <p>ที่อยู่</p>
-            <div className="flex m-5 gap-5 ">
-              <button className="rounded-xl shadow-xl bg-green-700 text-white p-4 w-full">
-                Edit
-              </button>
-              <button className="rounded-xl shadow-xl bg-red-700 text-white p-2 w-full">
-                Delete
-              </button>
+          <div className="flex">
+            <div className="w-2/4 m-5 ">
+              <img
+                src="public/EV Carsharing.webp"
+                alt=""
+                className="w-full rounded-xl"
+              />
+            </div>
+            <div className="m-5">
+              <h4>ชื่อ</h4>
+              <p>รุ่น</p>
+              <p>ทะเบียนรถ</p>
+              <p>หมายเหตุ</p>
+              <p>ที่อยู่</p>
+              <div className="flex mt-5 gap-5 ">
+                <Link
+                  to="/edit"
+                  className="rounded-xl shadow-xl bg-green-700 text-white p-4 w-full"
+                >
+                  Edit
+                </Link>
+                <button
+                  onClick={showDeleteSwal}
+                  className="rounded-xl shadow-xl bg-red-700 text-white p-2 w-full"
+                >
+                  Delete
+                </button>
+              </div>
             </div>
           </div>
         </div>

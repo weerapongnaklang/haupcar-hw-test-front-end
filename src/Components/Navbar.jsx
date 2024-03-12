@@ -4,7 +4,7 @@ import haupcar_logo from "../../public/haupcar_logo.png";
 
 const Navbar = () => {
   return (
-    <div className="border-b-2">
+    <div className="border-b-2 z-30">
       <div className="flex justify-between items-center m-5 font-bold text-blue-900  ">
         <div className="w-40">
           <Link to="/">
