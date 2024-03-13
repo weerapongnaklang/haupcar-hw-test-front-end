@@ -115,9 +115,9 @@ const EditPage = () => {
                 <h2 className="text-[#16499C] text-center text-xl mb-3 font-bold">
                   แก้ไขข้อมูล
                 </h2>
-                <label htmlFor="input-brand">จุดรับรถ:</label>
+                <label htmlFor="station">จุดรับรถ:</label>
                 <input
-                  id="ิinput-brand"
+                  id="station"
                   type="text"
                   value={station}
                   placeholder="Benz"
@@ -126,9 +126,9 @@ const EditPage = () => {
                     setStation(e.target.value);
                   }}
                 />
-                <label htmlFor="input-brand">ยี่ห้อรถ:</label>
+                <label htmlFor="brand">ยี่ห้อรถ:</label>
                 <input
-                  id="ิinput-brand"
+                  id="brand"
                   type="text"
                   value={name}
                   placeholder="Benz"
@@ -137,8 +137,9 @@ const EditPage = () => {
                     setName(e.target.value);
                   }}
                 />
-                <label htmlFor="">รุ่นรถ:</label>
+                <label htmlFor="model">รุ่นรถ:</label>
                 <input
+                  id="model"
                   type="text"
                   value={model}
                   placeholder="1270B"
@@ -147,8 +148,9 @@ const EditPage = () => {
                     setModel(e.target.value);
                   }}
                 />
-                <label htmlFor="">ทะเบียนรถ:</label>
+                <label htmlFor="licenseplate">ทะเบียนรถ:</label>
                 <input
+                  id="licenseplate"
                   type="text"
                   value={licensePlate}
                   placeholder="กท 1111"
@@ -157,8 +159,9 @@ const EditPage = () => {
                     setLicensePlate(e.target.value);
                   }}
                 />
-                <label htmlFor="">หมายเหตุ:</label>
+                <label htmlFor="remark">หมายเหตุ:</label>
                 <input
+                  id="remark"
                   type="text"
                   value={remark}
                   placeholder="รถใหม่ อายุการใช้งานน้อย"
@@ -167,8 +170,9 @@ const EditPage = () => {
                     setRemark(e.target.value);
                   }}
                 />
-                <label htmlFor="">ที่อยู่:</label>
+                <label htmlFor="address">ที่อยู่:</label>
                 <input
+                  id="address"
                   type="text"
                   value={address}
                   placeholder="50 กิโล"

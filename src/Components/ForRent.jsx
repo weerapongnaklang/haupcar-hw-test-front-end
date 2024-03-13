@@ -92,8 +92,9 @@ const ForRent = () => {
                 <h2 className="text-[#16499C] text-center text-xl mb-3 font-bold">
                   เพิ่มเพื่อนร่วมทางกับเรา
                 </h2>
-                <label htmlFor="">จุดรับรถ:</label>
+                <label htmlFor="station">จุดรับรถ:</label>
                 <input
+                id="station"
                   type="text"
                   value={station}
                   placeholder="Siam Paragon"
@@ -107,9 +108,9 @@ const ForRent = () => {
                   hidden={!stationError}
                 />
 
-                <label htmlFor="input-brand">ยี่ห้อรถยนต์:</label>
+                <label htmlFor="brand">ยี่ห้อรถยนต์:</label>
                 <input
-                  id="ิinput-brand"
+                  id="ิbrand"
                   type="text"
                   value={name}
                   placeholder="Benz"
@@ -123,8 +124,9 @@ const ForRent = () => {
                   hidden={!nameError}
                 />
 
-                <label htmlFor="">รุ่นรถ:</label>
+                <label htmlFor="model">รุ่นรถ:</label>
                 <input
+                id="model"
                   type="text"
                   value={model}
                   placeholder="1270B"
@@ -138,8 +140,9 @@ const ForRent = () => {
                   hidden={!modelError}
                 />
 
-                <label htmlFor="">ทะเบียนรถ:</label>
+                <label htmlFor="licenseplate">ทะเบียนรถ:</label>
                 <input
+                id="licenseplate"
                   type="text"
                   value={licensePlate}
                   placeholder="กท 1111"
@@ -153,8 +156,9 @@ const ForRent = () => {
                   hidden={!licensePlateError}
                 />
 
-                <label htmlFor="">หมายเหตุ:</label>
+                <label htmlFor="remark">หมายเหตุ:</label>
                 <input
+                id="remark"
                   type="text"
                   value={remark}
                   placeholder="รถใหม่ อายุการใช้งานน้อย"
@@ -168,8 +172,9 @@ const ForRent = () => {
                   hidden={!remarkError}
                 />
 
-                <label htmlFor="">ที่อยู่:</label>
+                <label htmlFor="address">ที่อยู่:</label>
                 <input
+                id="address"
                   type="text"
                   value={address}
                   placeholder="ถนนรัชดาภิเษก ดินแดง"
