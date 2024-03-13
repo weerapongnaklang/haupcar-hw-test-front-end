@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import axios from "axios";
+import car from "../../public/EV-Carsharing.webp";
 
 const CarCard = ({ car, onDelete }) => {
   const { _id, station, name, model, licensePlate, remark, address } = car;

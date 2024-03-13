@@ -8,11 +8,11 @@ const Home = () => {
   return (
     <div className="h-screen">
       <Navbar />
-      <div className="p-20">
+      <div className="py-20 px-5 md:p-20">
         <h2 className="font-bold text-[#16499C] text-center mb-5 text-4xl">
           HAUPCAR
         </h2>
-        <div className="text-center p-10 ">
+        <div className="text-center  p-10 ">
           <p>
             เช่ารถ Hatchback, Sedan, Executive car, SUV, Pick-up truck, Van,
             E-Scooter, E-Bike, EV

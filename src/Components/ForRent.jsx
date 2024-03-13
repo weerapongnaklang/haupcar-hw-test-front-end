@@ -4,6 +4,7 @@ import InputHelperText from "./InputHelperText";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
+// import EVcar from "../../public/public/Icon-EVcars .webp";
 
 const ForRent = () => {
   // useStae
@@ -81,9 +82,9 @@ const ForRent = () => {
           onSubmit={handleSubmit}
           className="flex flex-col h-dvh md:flex-none"
         >
-          <div className="flex bg-slate-50 mt-20 rounded-3xl m-5">
+          <div className="block md:flex bg-slate-50 mt-20 rounded-3xl m-5">
             <div className="w-2/3 flex justify-center items-center">
-              <img src="public/Icon-EVcars .webp" alt="" />
+              <img src="public/Icon-EVcars .webp" alt="car" />
             </div>
             <div className="flex w-full">
               <div className="flex flex-col bg-sky-50 w-4/5 mr-0 m-auto p-8 rounded-xl">
