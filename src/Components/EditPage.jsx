@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Swal from "sweetalert2";
 import axios from "axios";
+import EVcar from "../../public/Icon-EVcars .webp";
 
 const EditPage = () => {
   const { carId } = useParams();
@@ -97,18 +98,6 @@ const EditPage = () => {
     }
   };
 
-  const showEditSwal = () => {
-    Swal.fire({
-      text: "Successfully to update car!",
-      icon: "success",
-      customClass: {
-        icon: "no-border",
-      },
-      confirmButtonColor: "#06cc4b",
-      confirmButtonText: "OK",
-    });
-  };
-
   return (
     <div>
       <Navbar />
@@ -117,16 +106,12 @@ const EditPage = () => {
           onSubmit={handleSubmit}
           className="flex flex-col h-dvh md:flex-none"
         >
-          <div className="flex ">
-            <div className="w-2/3 flex justify-center items-center">
-              <img
-                src="../public/Icon-EVcars .webp"
-                alt=""
-                className="m-auto w-2/4"
-              />
+          <div className="block md:flex bg-white mt-20 rounded-3xl m-20 shadow-xl">
+            <div className="m-auto p-5 w-2/3 md:w-full flex  justify-center items-center">
+              <img src={EVcar} alt="EVcar" />
             </div>
             <div className="flex w-full">
-              <div className="flex flex-col bg-sky-50 w-3/5 m-auto p-8 rounded-xl">
+              <div className="flex flex-col bg-sky-50 w-full  md:mr-0 m-auto p-10 rounded-b-3xl md:rounded-3xl">
                 <h2 className="text-[#16499C] text-center text-xl mb-3 font-bold">
                   แก้ไขข้อมูล
                 </h2>

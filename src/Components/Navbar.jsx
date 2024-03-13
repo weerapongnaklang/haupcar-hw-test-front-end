@@ -28,7 +28,7 @@ const Navbar = () => {
           <div>
             <i
               onClick={() => setShowMobileMenu(!showMobileMenu)}
-              class="fa-solid fa-bars text-2xl mr-5 md:hidden cursor-pointer"
+              class="fa-solid fa-bars text-2xl mr-5 md:hidden cursor-pointer text-blue-900"
             ></i>
           </div>
         </div>

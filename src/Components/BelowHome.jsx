@@ -28,7 +28,7 @@ const BelowHome = () => {
         </div>
         <div className=" w-2/3 mt-5 m-auto  md:flex-col md:w-2/5 space-y-2 text-gray-800 pl-10 pr-10">
           <div className="flex items-center">
-            <p className=" font-bold text-2xl mr-5 text-[#16499C]">
+            <p className=" font-bold text-lg md:text-2xl mr-5 text-[#16499C]">
               ปล่อยเช่ารถ
             </p>
             <img src={Iconcurrental} className="w-2/5" alt="newcar" />

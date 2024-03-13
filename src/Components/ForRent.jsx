@@ -4,7 +4,7 @@ import InputHelperText from "./InputHelperText";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
-// import EVcar from "../../public/public/Icon-EVcars .webp";
+import EVcar from "../../public/Icon-EVcars .webp";
 
 const ForRent = () => {
   // useStae
@@ -57,10 +57,11 @@ const ForRent = () => {
           console.log(res);
           Swal.fire({
             text: "Successfully created new car!",
+            icon: "success",
             customClass: {
               icon: "no-border",
             },
-            confirmButtonColor: "#3085d6",
+            confirmButtonColor: "#06cc4b",
             confirmButtonText: "OK",
           });
           navigate("/allcar");
@@ -82,12 +83,12 @@ const ForRent = () => {
           onSubmit={handleSubmit}
           className="flex flex-col h-dvh md:flex-none"
         >
-          <div className="block md:flex bg-slate-50 mt-20 rounded-3xl m-5">
-            <div className="w-2/3 flex justify-center items-center">
-              <img src="public/Icon-EVcars .webp" alt="car" />
+          <div className="block md:flex bg-white mt-20 rounded-3xl m-20 shadow-xl">
+            <div className="m-auto p-5 w-2/3 md:w-full flex  justify-center items-center">
+              <img src={EVcar} alt="car" />
             </div>
             <div className="flex w-full">
-              <div className="flex flex-col bg-sky-50 w-4/5 mr-0 m-auto p-8 rounded-xl">
+              <div className="flex flex-col bg-sky-50 w-full  md:mr-0 m-auto p-10 rounded-b-3xl md:rounded-3xl">
                 <h2 className="text-[#16499C] text-center text-xl mb-3 font-bold">
                   เพิ่มเพื่อนร่วมทางกับเรา
                 </h2>
@@ -183,7 +184,7 @@ const ForRent = () => {
                 />
 
                 <div className="m-auto mt-5">
-                  <button className="p-2  bg-sky-400 text-white rounded-lg  ">
+                  <button className="p-2  bg-sky-400 hover:bg-sky-500 text-white rounded-lg  ">
                     Add Car
                   </button>
                 </div>
