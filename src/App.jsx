@@ -12,7 +12,7 @@ function App() {
     { path: "/about", element: <About /> },
     { path: "/allcar", element: <AllCar /> },
     { path: "/for-rent", element: <ForRent /> },
-    { path: "/edit", element: <EditPage /> },
+    { path: "/edit/:carId", element: <EditPage /> },
   ]);
   return (
     <>

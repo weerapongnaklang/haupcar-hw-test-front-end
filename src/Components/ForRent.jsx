@@ -81,12 +81,12 @@ const ForRent = () => {
           onSubmit={handleSubmit}
           className="flex flex-col h-dvh md:flex-none"
         >
-          <div className="flex ">
+          <div className="flex bg-slate-50 mt-20 rounded-3xl m-5">
             <div className="w-2/3 flex justify-center items-center">
               <img src="public/Icon-EVcars .webp" alt="" />
             </div>
             <div className="flex w-full">
-              <div className="flex flex-col bg-sky-50 w-3/5 m-auto p-8 rounded-xl">
+              <div className="flex flex-col bg-sky-50 w-4/5 mr-0 m-auto p-8 rounded-xl">
                 <h2 className="text-[#16499C] text-center text-xl mb-3 font-bold">
                   เพิ่มเพื่อนร่วมทางกับเรา
                 </h2>
@@ -121,7 +121,7 @@ const ForRent = () => {
                   hidden={!nameError}
                 />
 
-                <label htmlFor="">รุ่นรถ</label>
+                <label htmlFor="">รุ่นรถ:</label>
                 <input
                   type="text"
                   value={model}

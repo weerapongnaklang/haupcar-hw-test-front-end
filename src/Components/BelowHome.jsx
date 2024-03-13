@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const BelowHome = () => {
   return (
     <div className="bg-sky-50">
-      <div className="flex m-auto p-10">
+      <div className="flex items-center m-auto p-10">
         <div>
-          <h2 className="text-center text-2xl font-bold text-[#16499C]">
+          <h2 className="text-center text-5xl font-bold text-[#16499C] mb-5">
             HAUP
           </h2>
-          <p className="text-center text-xl font-bold text-[#16499C]">
+          <p className="text-center text-2xl font-bold text-[#16499C]">
             คืออะไร
           </p>
           <div className="text-center ml-10 mr-10 mt-3 text-gray-600 w-50">
@@ -18,14 +17,9 @@ const BelowHome = () => {
               ที่พร้อมอำนวยความสะดวกให้พาร์ทเนอร์ <br />
               ในการบริหารจัดการปล่อยเช่ารถของคุณให้เป็นเรื่องง่าย ครบ จบ
               ในแอปเดียว <br /> บริการคัดกรองลูกค้าเช่ารถ และ
-              ให้เช่าจุดจอดรถทั่วกรุงเทพฯ เพื่อความสะดวกในการ รับ-ส่งรถกับลูกค้า
+              ให้เช่าจุดจอดรถทั่วกรุงเทพฯ <br />
+              เพื่อความสะดวกในการ รับ-ส่งรถกับลูกค้า
             </p>
-            <p className="font-semibold mb-5">อยากร่วมงานกับเรา</p>
-            <Link to="/for-rent">
-              <a className="rounded-lg text-white  bg-pink-500 hover:bg-pink-600 p-2  shadow-lg ">
-                CLICK
-              </a>
-            </Link>
           </div>
         </div>
         <div className="flex-col space-y-2 text-gray-800 pl-10 pr-10">

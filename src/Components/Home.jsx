@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div className="h-screen">
       <Navbar />
-      <div className="p-10">
-        <h2 className="font-bold text-[#16499C] text-center mt-10 text-2xl">
+      <div className="p-20">
+        <h2 className="font-bold text-[#16499C] text-center mb-5 text-4xl">
           HAUPCAR
         </h2>
         <div className="text-center p-10 ">
@@ -23,11 +23,18 @@ const Home = () => {
             สามารถใช้แอปจองและปลดล็อครถได้ทันที 24 ชั่วโมง
           </p>
         </div>
-        <Link to="/booking">
-          <button className=" flex m-auto p-2 rounded-lg  shadow-md bg-sky-500 text-white hover:bg-sky-600">
-            Book Now
-          </button>
-        </Link>
+        <div className="flex justify-center gap-5">
+          <Link to="/allcar">
+            <button className=" flex m-auto p-2 rounded-lg  shadow-md bg-sky-500 text-white hover:bg-sky-600">
+              Manage Car
+            </button>
+          </Link>
+          <Link to="/for-rent">
+            <button className=" flex m-auto p-2 rounded-lg  shadow-md bg-pink-500 text-white hover:bg-pink-600">
+              Add New Car
+            </button>
+          </Link>
+        </div>
       </div>
       <BelowHome />
       <Partner />

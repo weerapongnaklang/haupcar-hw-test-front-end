@@ -17,11 +17,11 @@ const Navbar = () => {
         <Link to="/about">
           <a className="hover:text-sky-800">ABOUT</a>
         </Link>
-        <Link to="/booking">
-          <a className="hover:text-sky-800">ALL CAR</a>
+        <Link to="/allcar">
+          <a className="hover:text-sky-800">MANAGE CAR</a>
         </Link>
         <Link to="/for-rent">
-          <a className="hover:text-sky-800 mr-5">FOR RENT</a>
+          <a className="hover:text-sky-800 mr-5">ADD NEW CAR</a>
         </Link>
       </div>
     </div>

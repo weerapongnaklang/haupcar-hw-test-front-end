@@ -2,13 +2,13 @@ import React from "react";
 
 const Partner = () => {
   return (
-    <div className="p-20">
+    <div className="p-20 w-4/5 m-auto">
       <div>
-        <p className="text-center text-4xl font-semibold text-[#16499C] mb-10">
+        <p className="text-center text-4xl font-semibold text-[#16499C] mb-16">
           Partner Benefits
         </p>
       </div>
-      <div className="flex text-gray-700">
+      <div className="flex text-gray-700 ">
         <div className="text-center">
           <img src="public/Icon-earning.png" alt="" className="w-3/5 m-auto" />
           <p className="text-[#16499C] text-xl mt-2 mb-2 ">Income</p>
